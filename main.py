@@ -1,15 +1,16 @@
-import mysql.connector
-import requests
 from datetime import datetime
 from colorama import Fore, Style
+import mysql.connector
+import requests
 import csv
 
+# میتونید کد شهر های بیشتری را اضافه کنید!
 cities = {"1": "tehran", "2": "karaj", "3": "mashhad", "4": "esfahan", "33": "kish"}
 
 # database
 config = {
     'user': 'root',
-    'password': '1234',
+    'password': '',
     'host': '127.0.0.1',
     'database': 'divar',
     'raise_on_warnings': True
